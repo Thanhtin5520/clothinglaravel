@@ -36,3 +36,5 @@ Route::get('auth/{provider}/callback', [App\Http\Controllers\Auth\SocialLoginCon
 
 // Profile routes
 Route::get('profile', [App\Http\Controllers\UserController::class, 'index'])->middleware('auth')->name('profile');
+
+?>
